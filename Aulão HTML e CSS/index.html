@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>MEU PORTFOLIO</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center"
+        style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+        <h3 class="w3-padding-64 w3-center"><b><a style="text-decoration:none" target="_blank"
+                    href="https://www.linkedin.com/in/joseclecio-nascimento-concei%C3%A7%C3%A3o-479508151/">JOSECLECIO</b>
+        </h3></a>
+        <a href="javascript:void(0)" onclick="closeSidebar()"
+            class="w3-bar-item w3-button w3-padding w3-hide-large">FECHAR</a>
+        <a href="#" onclick="closeSidebar()" class="w3-bar-item w3-button">INICIAL</a>
+        <a href="#about" onclick="closeSidebar()" class="w3-bar-item w3-button">SOBRE MIM</a>
+        <a href="#contact" onclick="closeSidebar()" class="w3-bar-item w3-button">CONTATO</a>
+    </nav>
+
+    <!-- Menu superior em telas pequenas -->
+    <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+        <span class="w3-left w3-padding">JOSECLECIO</span>
+        <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="operSidebar()">☰</a>
+    </header>
+
+    <!-- Efeito de sobreposição ao abrir a barra lateral em telas pequenas -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="closeSidebar()" style="cursor:pointer"
+        title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:300px">
+
+        <!-- Empurra o conteúdo para baixo em telas pequenas -->
+        <div class="w3-hide-large" style="margin-top:83px"></div>
+
+        <!-- Foto -->
+        <div class="w3-row">
+            <div class="colorbar">
+                <img src="../img/background.jpeg" style="width:100%;" alt="Imagem ilustrativa." class="pulse">
+            </div>
+        </div>
+
+        <!-- Seção Sobre -->
+        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+            <h4><b>Sobre Mim</b></h4>
+            <img src="https://avatars.githubusercontent.com/u/71461484?s=400&u=74fe67be358bd1b8d3c21a3479bdf273e7a1bbdd&v=4"
+                alt="Eu" class="w3-image w3-padding-32" width="300" height="650" onclick="onClick(this)">
+            <div class="w3-content w3-justify" style="max-width:600px">
+                <h4>Meu Nome é Joseclecio</h4>
+                <p>Sou uma pessoa que gosta bastante de tecnologias, ama passear e de descobrir coisas novas. Tenho
+                    planos futuros na qual pretendo focar na área de programação,
+                    e me tornar um Dev. Meus hobbies são jogar video game, estudar programação e brincar um pouco com
+                    banco de dados. Pretendo me tornar
+                    um grande profissional da área de tecnologia e ser reconhecido por todos a minha volta. :)
+
+                </p>
+
+                <p>E-mail:
+                    <a
+                        href="mailto:joseclecionascimento40@gmail.com?subject=Hello%20again">joseclecionascimento40@gmail.com</a>
+                </p>
+                <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+                    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+                    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                        <img id="img01" class="w3-image">
+                        <p id="caption"></p>
+                    </div>
+                </div>
+
+                <p>Tel: (00)00000-00000</p>
+                <hr class="w3-opacity">
+                <h4 class="w3-padding-16">Habilidades Técnicas</h4>
+                <p class="w3-wide">Java</p>
+                <div class="w3-white">
+                    <div class="w3-container w3-padding-small w3-center w3-grey" style="width:80%">80%</div>
+                </div>
+                <p class="w3-wide">HTML</p>
+                <div class="w3-white">
+                    <div class="w3-container w3-padding-small w3-center w3-grey" style="width:85%">85%</div>
+                </div>
+                <p class="w3-wide">CSS</p>
+                <div class="w3-white">
+                    <div class="w3-container w3-padding-small w3-center w3-grey" style="width:80%">80%</div>
+                </div>
+                <p class="w3-wide">SQL</p>
+                <div class="w3-white">
+                    <div class="w3-container w3-padding-small w3-center w3-grey" style="width:40%">40%</div>
+                </div>
+                <p class="w3-wide">CORDOVA</p>
+                <div class="w3-white">
+                    <div class="w3-container w3-padding-small w3-center w3-grey" style="width:80%">80%</div>
+                </div>
+                <p class="w3-wide">JAVASCRIPT</p>
+                <div class="w3-white">
+                    <div class="w3-container w3-padding-small w3-center w3-grey" style="width:40%">40%</div>
+                </div>
+                <p><a href="../curriculo/Curriculo.pdf" download><button style="outline: none;"
+                            class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom">Baixar
+                            Curriculo <i class="fa fa-download"></i></button></a></p>
+
+                <hr class="w3-opacity">
+
+                <h4 class="w3-padding-16">Meus Projetos</h4>
+                <div class="w3-row-padding" style="margin:0 -16px">
+                    <div class="w3-half w3-margin-bottom">
+                        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                            <li class="w3-black w3-xlarge w3-padding-32">Projeto de Gamificação</li>
+                            <li class="w3-padding-16">Projeto destinado a disciplina de Gamificação, onde tem um app de
+                                ponto eletrônico e terá recompensas em folgas para que aqueles colaboradores de uma
+                                determinada empresa possam cumprir com os requisitos citados no PDF.<br><br>
+                                As telas foram feitas no programa Justinmind Prototyper. Para a execução das telas, terá
+                                que baixar o programa e instalar, após isso baixe o arquivo "Telas App Ponto.vp" e abra
+                                no programa.
+
+                            </li>
+                            <li class="w3-light-grey w3-padding-24">
+                                <a target="_blank" href="https://github.com/joseclecio/ProjetoGamificacaoTelas"><button
+                                        class="w3-button w3-white w3-padding-large">Link Github <i class="fa fa-github"
+                                            style="font-size:20px"></i></button>
+                            </li></a>
+                            <li class="w3-light-grey w3-padding-24">
+                                <a target="_blank" href="https://youtu.be/sO2rTNPEbE0">
+                                    <button class="w3-button w3-white w3-padding-large">Link Youtube <i
+                                            class="fa fa-youtube-play" style="font-size:20px;color:red"></i></button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="w3-half">
+                        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                            <li class="w3-black w3-xlarge w3-padding-32">Projeto Dispositivos Móveis</li>
+                            <li class="w3-padding-16">Um aplicativo para consultar as calorias de um determinado
+                                alimento, contando também com algumas ferramentas como MMC, a opção de guardar suas
+                                calorias dentre outras. Utilizei a tecnologia Cordova da Adobe e o banco foi o Firebase
+                                da Google. Usei as linguagens HTML, CSS e JavaScript apenas.
+                            </li>
+
+                            <li class="w3-light-grey w3-padding-24">
+                                <a target="_blank"
+                                    href="https://github.com/joseclecio/ProjetoDispositivosMoveis"><button
+                                        class="w3-button w3-white w3-padding-large">Link Github <i class="fa fa-github"
+                                            style="font-size:20px"></i></button>
+                            </li></a>
+                            <li class="w3-light-grey w3-padding-24">
+                                <a target="_blank"
+                                    href="https://www.youtube.com/watch?v=5UFqdg0jXUM&ab_channel=JoseclecioNascimento">
+                                    <button class="w3-button w3-white w3-padding-large">Link Youtube <i
+                                            class="fa fa-youtube-play" style="font-size:20px;color:red"></i></button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção Contato -->
+        <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+            <div class="w3-content" style="max-width:600px">
+                <h4 class="w3-center"><b>
+                        <Contate-me></Contate-me>
+                    </b></h4>
+                <p><b>Entre em contato comigo! :)</b></p>
+                <form action="/action_page.php" target="_blank">
+                    <div class="w3-section">
+                        <label>Nome</label>
+                        <input class="w3-input w3-border" type="text" name="Name" required>
+                    </div>
+                    <div class="w3-section">
+                        <label>E-mail</label>
+                        <input class="w3-input w3-border" type="text" name="Email" required>
+                    </div>
+                    <div class="w3-section">
+                        <label>Mensagem</label>
+                        <textarea class="w3-input w3-border" required></textarea>
+                    </div>
+                    <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-32 w3-grey">
+            <div class="w3-row-padding">
+                <div class="w3-third">
+                    <h3>INFORMAÇÕES</h3>
+                    <p>Aqui terão algumas formas de contato externas como linkedin, Github e YouTube.</p>
+                </div>
+
+                <div class="w3-third">
+                    <h3>REDES SOCIAIS</h3>
+                    <ul class="w3-ul">
+                        <a style="text-decoration: none;" target="_blank" href="https://github.com/joseclecio">
+                            <li class="w3-padding-16 w3-hover-black">
+                                <i class="fa fa-github" style="font-size:30px"></i><span class="w3-large">
+                                    Github</span><br>
+                            </li>
+                        </a>
+                        <a style="text-decoration: none;" target="_blank"
+                            href="https://www.linkedin.com/in/joseclecio-nascimento-concei%C3%A7%C3%A3o-479508151/">
+                            <li class="w3-padding-16 w3-hover-black">
+                                <i class="fa fa-linkedin-square" style="font-size:30px"></i><span class="w3-large">
+                                    Linkedin</span><br>
+                            </li>
+                        </a>
+                        <a style="text-decoration: none;" target="_blank"
+                            href="https://www.youtube.com/channel/UCMLqRDrKP0o_8UVV63BATeQ/">
+                            <li class="w3-padding-16 w3-hover-black">
+                                <i class="fa fa-youtube-play" style="font-size:30px"></i><span class="w3-large">
+                                    YouTube</span><br>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="w3-third">
+                    <h3>TAGS</h3>
+                    <p>
+                        <span class="w3-tag w3-black w3-margin-bottom">Dev</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Desenvolvimento</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Programação</span>
+                        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Java</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">HTML</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">CSS</span>
+                        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">JavaScript</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">SQL</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Tecnologia</span>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <div class="w3-black w3-center w3-padding-24">©2022 Joseclecio</a></div>
+
+        <!-- Fim da página -->
+    </div>
+
+    <script>
+        // Script para abrir e fechar a barra lateral
+        function operSidebar() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function closeSidebar() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Galeria de imagens modal
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+    </script>
+
+
+</body>
+
+</html>

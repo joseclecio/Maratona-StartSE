@@ -1,0 +1,109 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Raleway", sans-serif
+}
+
+.w3-third img {
+    margin-bottom: -6px;
+    opacity: 0.8;
+    cursor: pointer
+}
+
+.w3-third img:hover {
+    opacity: 1
+}
+
+/*Animação Pulse na imagem*/
+
+.pulse {
+    animation: pulse 3s infinite;
+    margin: 0 auto;
+    display: table;
+    animation-direction: alternate;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+        -webkit-filter: brightness(100%);
+    }
+
+    100% {
+        -webkit-transform: scale(1.1);
+        -webkit-filter: brightness(200%);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        filter: brightness(100%);
+    }
+
+    100% {
+        transform: scale(0.9);
+        filter: brightness(200%);
+    }
+}
+
+/*Efeito correntesa na imagem*/
+
+@-webkit-keyframes beta-gradient {
+    0% {
+        background-position: 0 0
+    }
+
+    100% {
+        background-position: 100% 0
+    }
+}
+
+@-moz-keyframes beta-gradient {
+    0% {
+        background-position: 0 0
+    }
+
+    100% {
+        background-position: 100% 0
+    }
+}
+
+@keyframes beta-gradient {
+    0% {
+        background-position: 0 0
+    }
+
+    100% {
+        background-position: 100% 0
+    }
+}
+
+.colorbar {
+    width: 100%;
+    background: linear-gradient(to right, #2c2738, #6b49ca, #3d3d28, #57E6E6, #564680, #114141);
+    -webkit-animation: beta-gradient 3s linear infinite;
+    -moz-animation: beta-gradient 3s linear infinite;
+    animation: beta-gradient 3s linear infinite;
+    position: relative;
+    overflow: hidden;
+}
+
+.colorbar::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: -webkit-linear-gradient(315deg, rgba(9, 79, 153, 0.29), rgba(164, 164, 164, 0.18) 50%, rgba(45, 45, 81, 0.49) 95%), url(https://www.transparenttextures.com/patterns/climpek.png);
+    background-image: linear-gradient(135deg, #ffffff00, #ffffff2e 50%, #ffffff00 95%), url(https://www.transparenttextures.com/patterns/climpek.png);
+    -webkit-animation: beta-gradient 40s linear infinite;
+    -moz-animation: beta-gradient 40s linear infinite;
+    animation: beta-gradient 40s linear infinite;
+}
